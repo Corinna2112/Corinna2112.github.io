@@ -374,6 +374,18 @@ header > .button { flex-shrink: 0; }
     header > .button { padding: 12px; }
     .booking-row .contact-button { width: 100%; }
 }
+/* Kompakter Header */
+header { padding: 14px 7%; gap: 24px; }
+.logo img { width: 300px; filter: brightness(1.15); mix-blend-mode: multiply; }
+nav { gap: clamp(18px, 3vw, 42px); }
+nav a { white-space: nowrap; }
+nav a:hover { color: var(--orange); }
+@media (max-width: 800px) {
+    header { padding: 12px 5% 18px; flex-direction: column; gap: 12px; }
+    .logo img { width: 260px; }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 20px; }
+    nav a { font-size: 13px; }
+}
 </style>
 </head>
 
@@ -385,12 +397,11 @@ header > .button { flex-shrink: 0; }
     </a>
 
     <nav aria-label="Hauptnavigation">
-        <a href="#idee">Die Idee</a>
-        <a href="#video">Unser Pitch</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#idee">Über CampusKiste</a>
+        <a href="#video">So funktioniert's</a>
+        <a href="#kontakt">Mitgestalten</a>
     </nav>
 
-    <a class="button" href="#kontakt">Kontakt ↗</a>
 </header>
 
 <main>
